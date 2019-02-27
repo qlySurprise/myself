@@ -217,8 +217,8 @@ export default {
       let n = 0;
       let time = setInterval(() => {
         this.code = this.codeStyle.substring(0,n);
-        n += 1;
-        this.code.scrollTop = 100000;
+        n += 1
+          code.scrollTop = 100000
         if( n >= 1423){
           window.clearInterval(time);
              this.nineCodeFn()
@@ -231,22 +231,22 @@ export default {
       nineCodeFn(){
            let m = 0;
             let timem = setInterval(() => {
-              this.mine = this.mineCode.substring(0,m);
-              m += 1;
-               this.mine.scrollTop = 100000;
+              this.mine = this.mineCode.substring(0,m)
+              m += 1
+                mine.scrollTop = 100000
               if( m >= this.mineCode.length){
                 window.clearInterval(timem);
 
-                let n = 1424;
-                let time = setInterval(() => {
-                  this.code = this.codeStyle.substring(0,n);
-                  n += 1;
-                  this.code.scrollTop = 100000;
-                  if( n >= this.codeStyle.length){
-                    window.clearInterval(time);
+                let p = 1424;
+                let timeb = setInterval(() => {
+                  this.code = this.codeStyle.substring(0,p)
+                  p += 1
+                   code.scrollTop = 100000
+                  if( p >= this.codeStyle.length){
+                    window.clearInterval(timeb);
 
-        }
-       },10);
+                    }
+                 },10);
               }
             },1)
       }
