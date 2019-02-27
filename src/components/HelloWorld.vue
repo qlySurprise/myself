@@ -218,7 +218,7 @@ export default {
       let time = setInterval(() => {
         this.code = this.codeStyle.substring(0,n);
         n += 1;
-        code.scrollTop = 100000;
+        this.code.scrollTop = 100000;
         if( n >= 1423){
           window.clearInterval(time);
              this.nineCodeFn()
@@ -233,7 +233,7 @@ export default {
             let timem = setInterval(() => {
               this.mine = this.mineCode.substring(0,m);
               m += 1;
-               mine.scrollTop = 100000;
+               this.mine.scrollTop = 100000;
               if( m >= this.mineCode.length){
                 window.clearInterval(timem);
 
@@ -241,7 +241,7 @@ export default {
                 let time = setInterval(() => {
                   this.code = this.codeStyle.substring(0,n);
                   n += 1;
-                  code.scrollTop = 100000;
+                  this.code.scrollTop = 100000;
                   if( n >= this.codeStyle.length){
                     window.clearInterval(time);
 
